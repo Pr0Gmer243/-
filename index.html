@@ -1,34 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Simple Homepage</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <h1>Welcome to My Website</h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preader Codes</title>
+    <style>
+      /* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <main>
-    <section class="hero">
-      <h2>Hello, visitor!</h2>
-      <p>This is a simple homepage built with HTML, CSS, and JavaScript.</p>
-      <button id="actionBtn">Click Me</button>
-      <p id="response"></p>
-    </section>
-  </main>
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
 
-  <footer>
-    <p>&copy; 2025 My Website</p>
-  </footer>
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+}
 
-  <script src="script.js"></script>
-</body>
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  background-color: #fff;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 5px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 2rem;
+  text-align: center;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #222;
+  color: #ccc;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+    </style>
+    <script>
+      function sayHello() {
+        alert("Hello! Thanks for visiting.");
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+        <div class="logo-container">
+          <a href="https://google.com">
+            <div class="logo">PC</div>
+          </a>
+          <h1>Preader Codes</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  
+    <main>
+      <section class="welcome">
+        <h2>Welcome to My Website</h2>
+        <p>This is a simple homepage template built with HTML, CSS, and JavaScript.</p>
+        <button onclick="sayHello()">Click Me</button>
+      </section>
+    </main>
+  
+    <footer>
+      <p>&copy; 2025 My Website. All rights reserved.</p>
+    </footer>
+  
+    <script src="script.js"></script>
+  </body>
 </html>
