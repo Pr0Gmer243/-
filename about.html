@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preader Codes</title>
+    <style>
+      /* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  background-color: #fff;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 2rem;
+  text-align: center;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #222;
+  color: #ccc;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Add this under the existing nav styles */
+
+nav {
+  margin-top: 1rem;
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Button */
+.dropbtn {
+  background-color: #444;
+  color: white;
+  margin-top: -.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f4f4f4;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #555;
+}
+
+
+    </style>
+    <script>
+      function sayHello() {
+        alert("Hello! Thanks for visiting.");
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <a href="https://pr0gmer243.github.io/-/"><div class="logo">PC</div></a>
+        <h1>About</h1>
+      </div>
+      <nav>
+        <div class="dropdown">
+          <button class="dropbtn">Menu</button>
+          <div class="dropdown-content">
+            <a href="https://pr0gmer243.github.io/-/">Home</a>
+            <a href="https://pr0gmer243.github.io/-/about">About</a>
+            <a href="https://pr0gmer243.github.io/-/repositories">Repositories</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+  
+    <main>
+      <section class="welcome">
+        <h2>Welcome to My Website</h2>
+        <p>This is a simple homepage template built with HTML, CSS, and JavaScript.</p>
+        <button onclick="sayHello()">Click Me</button>
+      </section>
+    </main>
+  
+    <footer>
+      <p>&copy; 2025 My Website. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
